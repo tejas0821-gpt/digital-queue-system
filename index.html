@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f6"><title>Join the queue — Lineup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">↗</span><span>lineup<span class="brand-dot">.</span></span></a><div class="topbar-right"><span class="open-pill"><i></i> Queue is open</span><a class="quiet-link" href="qr.html">QR code <span>↗</span></a><a class="quiet-link" href="display.html">Live queue <span>↗</span></a></div></header>
+    <main class="join-layout">
+      <section class="intro"><div class="eyebrow"><span class="eyebrow-line"></span> YOUR TIME MATTERS</div><h1>Skip the<br><span class="serif">waiting room.</span></h1><p class="intro-copy">Take a spot in line from wherever you are. We’ll keep you in the loop.</p>
+        <div class="trust-row"><div class="avatar-stack"><span>J</span><span>A</span><span>M</span><span>+</span></div><div><strong>Easy as 1, 2, queue.</strong><small>No app download required</small></div></div>
+        <div class="decor-card"><div class="decor-top"><span>NOW SERVING</span><span class="live-dot"></span></div><div class="decor-number">A<span>—</span>018</div><div class="decor-bottom"><span>You're getting closer</span><span class="mini-wave">⌁⌁⌁</span></div></div>
+      </section>
+      <section class="form-wrap"><div class="form-card"><div class="card-heading"><div><div class="step-label">01 <span>/ 02</span></div><h2>Get in line</h2><p>Tell us a little about yourself to get started.</p></div><div class="heading-icon">✳</div></div>
+        <form id="join-form" novalidate>
+          <label for="customer-name">Your name</label><div class="input-shell"><span class="field-icon">◎</span><input id="customer-name" name="name" type="text" placeholder="e.g. Alex Morgan" autocomplete="name" maxlength="60" required></div>
+          <label for="category" class="category-label">What can we help with?</label><div class="select-shell"><span class="field-icon">▤</span><select id="category" name="category" required><option value="" disabled selected>Choose a service</option><option>General enquiry</option><option>Account support</option><option>Billing & payments</option><option>Technical support</option><option>Other</option></select><span class="select-caret">⌄</span></div>
+          <div class="wait-estimate"><span class="estimate-icon">◷</span><span>Estimated wait</span><strong id="estimate">About 12 min</strong></div>
+          <button class="button button-primary" type="submit"><span>Take my place</span><span class="button-arrow">↗</span></button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          <p class="privacy-note"><span>◇</span> Your spot is saved securely. You can leave the line any time.</p>
+        </form>
+      </div><div class="card-foot"><span>Already have a token?</span><a href="status.html">Check your place <span>→</span></a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© 2025 Lineup Queue</span><span>Made for a better wait <b>✳</b></span><a href="display.html">See live queue</a></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
